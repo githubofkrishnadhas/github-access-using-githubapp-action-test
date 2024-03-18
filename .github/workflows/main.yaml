@@ -12,7 +12,7 @@ jobs:
   creating-github-access-tokens:
     runs-on: ubuntu-latest
     steps:
-      - uses: githubofkrishnadhas/github-access-using-githubapp@v1.0.4
+      - uses: githubofkrishnadhas/github-access-using-githubapp@main
         with:
           github_app_id: ${{ secrets.APP_ID }}
           github_app_private_key: ${{ secrets.PVT_KEY }}
