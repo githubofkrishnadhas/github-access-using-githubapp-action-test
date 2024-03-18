@@ -1,0 +1,17 @@
+name: "create github app json web token"
+description: "GitHub Action for creating a GitHub App installation access token"
+inputs:
+  github_app_id:
+    description: "Github App ID"
+    type: number
+    required: true
+  github_app_private_key:
+    description: "Github App private key"
+jobs:
+  creating-github-access-tokens:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: githubofkrishnadhas/access-using-githubapp@v1.0.0
+        with:
+          github_app_id: ${{ secrets.APP_ID }}
+          github_app_private_key: ${{ secrets.PVT_KEY }}
