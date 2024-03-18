@@ -1,13 +1,13 @@
 name: "create github app json web token"
 on:
   workflow_dispatch:
-    inputs:
-      github_app_id:
-        description: "Github App ID"
-        type: number
-        required: true
-      github_app_private_key:
-        description: "Github App private key"
+#    inputs:
+#      github_app_id:
+#        description: "Github App ID"
+#        type: number
+#        required: true
+#      github_app_private_key:
+#        description: "Github App private key"
 jobs:
   creating-github-access-tokens:
     runs-on: ubuntu-latest
